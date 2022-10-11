@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpack</title>
+
+    <style>
+        * {
+            margin: 0%;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        p {
+            margin: 10px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+        .top-left, .bottom-right {
+            width: 50%;
+            padding-top: 140px;
+            padding-bottom: 140px;
+            background-color: #10101010;
+        }
+
+        .top-right, .bottom-left {
+            width: 50%;
+            padding-top: 140px;
+            padding-bottom: 140px;
+        }
+
+    </style>
+</head>
+
+<body id="body">
+    <div class="container">
+        <div class="top-left">
+            <h1>Exercício 1</h1><br>
+            <label for="dateInput1">Insira uma data: </label>
+            <input type="date" id="dateInput1">
+            <p id="result1a"></p>
+            <p id="result1b"></p>
+            <p id="result1c"></p>
+        </div>
+        <div class="top-right">
+            <h1>Exercício 2</h1><br>
+            <label for="dateInput2">Insira uma data em formato americano: </label>
+            <input type="text" id="dateInput2">
+            <button id="showFormatButton">Mostrar formato BR</button>
+            <p id="result2"></p>
+        </div>
+        <div class="bottom-left">
+            <h1>Exercício 3</h1><br>
+            <label for="dateInput3a">Selecione uma data: </label>
+            <input type="date" id="dateInput3a"><br><br>
+            <label for="dateInput3b">Selecione outra data: </label>
+            <input type="date" id="dateInput3b"><br><br>
+            <button id="daysDifferenceButton">Calcular diferença</button>
+            <p id="result3"></p>
+        </div>
+        <div class="bottom-right">
+            <h1>Exercício 4</h1><br>
+            <label for="dateInput4a">Selecione uma data com horário: </label>
+            <input type="datetime-local" id="dateInput4a"><br><br>
+            <label for="dateInput4b">Selecione outra data com horário: </label>
+            <input type="datetime-local" id="dateInput4b"><br><br>
+            <button id="hourDifferenceButton">Calcular diferença</button>
+            <p id="result4"></p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
